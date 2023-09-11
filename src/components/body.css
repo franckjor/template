@@ -9,7 +9,7 @@
 
 .body{
     margin: 0;
-    padding: 10px;
+    padding: 25px;
     background-color: whitesmoke;
     font-family: roboto, sans-serif;
     
@@ -45,8 +45,12 @@
     border: 1px solid rgb(89, 114, 189);
     color: white;
 }
+.title{
+    margin-right: 5px;
+}
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     margin: 2px;
