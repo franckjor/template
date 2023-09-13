@@ -9,7 +9,7 @@
 
 .body{
     margin: 0;
-    padding: 0;
+    padding: 25px;
     background-color: whitesmoke;
     font-family: roboto, sans-serif;
     
@@ -34,18 +34,23 @@
 }
 
 .card{
-    margin: 15px;
+    padding: 5px;
     border: 2px solid white;
-    width: 100%;
+    width: 97%;
     background-color: white;
 }
 .header{
+    padding: 5px;
     background-color:  rgb(89, 114, 189);
     border: 1px solid rgb(89, 114, 189);
     color: white;
 }
+.title{
+    margin-right: 5px;
+}
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     margin: 2px;
@@ -58,7 +63,7 @@ li{
         
     }
     .title-nav{
-        padding: 5px;
+        
         margin-left: 10px;
     }
 }
