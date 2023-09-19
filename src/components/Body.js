@@ -11,6 +11,7 @@ export default function Body() {
   
   const centres = useSelector((state) => state.CenterReducer.List_Centers);
   
+  
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Body() {
   }, []);
   
   const goto = (val)=>{
-    window.open("https://gatewaydoc-backoffice.vercel.app/"+val.id, '_blank');
+    window.open("https://gatewaydoc-backoffice.vercel.app/" + val.id, '_blank');
   }
 
   return (
@@ -32,14 +33,23 @@ export default function Body() {
       </div>
       <div className='container'>
         {
-          centres && centres?.map((center, index) => (
-            <div  key={center.id} className="card">
+          centres.data && centres.data?.map((center, index) => (
+            <div  key={center._id} className="card">
               <div className="header">
-                <p className="title"> {center.title}</p>
+                <p className="title"> {center.nom}</p>
               </div>
               <div className="card-body">
-                <a href="#" onClick={()=> goto(center)} >{center.body}</a>
-               
+                <ul>
+                  <li><a href="#" onClick={()=> goto(center)} >{center.urlSite}</a></li>
+                  <li><a href="#" >{center.addresse}</a></li>
+                  <li><a href="#"  >{center.telephone}</a></li>
+                  <li><a href="#" >{center.email}</a></li>
+                  <li><a href="#"  >{center.formeJuridque}</a></li>
+                  <li><a href="#"  >{center.localisation}</a></li>
+                  <li><a href="#"  >{center.raisonSocial}</a></li>
+                  <li><a href="#"  >{center.typeCentre}</a></li>
+                </ul>
+                
               </div>
             </div>
 

@@ -9,7 +9,7 @@ export const GET_CENTER_BY_ID  = "GET_CENTER_BY_ID";
 // on recupere tous les centres de la db
 export const getAllCenter = () => {
     return (dispatch) => {
-        return axios.get("https://jsonplaceholder.typicode.com/posts")
+        return axios.get("http://16.171.7.106:3500/structure/")
         .then((res) =>{
             dispatch({type: GET_ALL_CENTER, payload: res.data })
         })
@@ -17,3 +17,4 @@ export const getAllCenter = () => {
 }
 
 
+// https://jsonplaceholder.typicode.com/posts 
