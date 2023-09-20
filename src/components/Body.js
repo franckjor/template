@@ -22,7 +22,7 @@ export default function Body() {
   }, []);
   
   const goto = (val)=>{
-    window.open("https://gatewaydoc-backoffice.vercel.app/" + val.id, '_blank');
+    window.open("https://gatewaydoc-backoffice.vercel.app/" + val._id, '_blank');
   }
 
   return (
