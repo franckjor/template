@@ -28,6 +28,11 @@ export default function Body() {
   return (
     
     <div className='body'>
+      <div className='nav'>
+        <p className="title-nav"> Les structures</p>
+      </div>
+      <div className='container'>
+        {
           centres.data && centres.data?.map((center, index) => (
             <div  key={center._id} className="card">
               <div className="header">
